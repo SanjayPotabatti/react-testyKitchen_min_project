@@ -1,3 +1,10 @@
+import {Route, Switch} from 'react-router-dom'
+import Login from './components/Login'
+import Home from './components/Home'
+import Restaurant from './components/Restaurant'
+import RestaurantItemDetails from './components/RestaurantItemDetails'
+import NotFound from './components/NotFound'
+
 import './App.css'
 
 const sortByOptions = [
@@ -13,6 +20,11 @@ const sortByOptions = [
   },
 ]
 
-const App = () => <div>Hello World</div>
+const App = () => (
+  <Switch>
+    <Route path="/login" component={Login} />
+    <Route path="/" component={Home} />
+  </Switch>
+)
 
 export default App

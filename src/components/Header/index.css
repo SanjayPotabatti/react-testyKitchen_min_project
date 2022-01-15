@@ -1,0 +1,42 @@
+.header-bg-container {
+  background-color: #f8fafc;
+}
+.logo-image-header {
+  width: 34.81px;
+  height: 27.9px;
+}
+.header-heading {
+  color: #f7931e;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  width: 143px;
+  font-style: italic;
+}
+.navbar-nav {
+  flex: 1;
+  margin: auto !important;
+  display: flex;
+  justify-content: end;
+}
+.logout-button {
+  background-color: #f7931e;
+  color: #ffffff;
+  width: 73px;
+  height: 32px;
+  border-radius: 8px;
+  border-width: 0px;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  font-family: 'DM Sans';
+}
+.navItemsHeading {
+  color: #334155;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700px;
+  font-style: normal;
+  font-family: 'DM Sans';
+  background-color: transparent;
+}
