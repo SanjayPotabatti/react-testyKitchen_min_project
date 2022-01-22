@@ -1,0 +1,120 @@
+.restaurants-list {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants-list {
+    justify-content: flex-start;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #334155;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.page-count {
+  font-family: Bree Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #334155;
+}
+.restaurant-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.popular-heading {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #183b56;
+  margin-bottom: 0px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .select-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.select-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #64748b;
+}
+
+.sort-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sort-container {
+    justify-content: flex-end;
+  }
+}
+
+.sorted-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475569;
+  width: 60px;
+}
+
+.select-options {
+  outline: none;
+  border: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.option {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475569;
+}

@@ -1,8 +1,6 @@
 import {Route, Switch} from 'react-router-dom'
 import Login from './components/Login'
 import Home from './components/Home'
-import Restaurant from './components/Restaurant'
-import RestaurantItemDetails from './components/RestaurantItemDetails'
 import NotFound from './components/NotFound'
 
 import './App.css'
