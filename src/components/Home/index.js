@@ -25,7 +25,12 @@ const sortByOptions = [
 ]
 
 class Home extends Component {
-  state = {isLoading: false, activePage: 1, restaurantsList: []}
+  state = {
+    isLoading: false,
+    activePage: 1,
+    restaurantsList: [],
+    activeOptionId: sortByOptions[1].value,
+  }
 
   componentDidMount() {
     this.getRestaurants()
@@ -33,12 +38,12 @@ class Home extends Component {
 
   getRestaurants = async () => {
     this.setState({isLoading: true})
-    const {activePage, restaurantsList} = this.state
+    const {activePage, activeOptionId} = this.state
 
     const jwtToken = Cookies.get('jwt_token')
     const LIMIT = 9
     const offset = (activePage - 1) * LIMIT
-    const apiUrl = `https://apis.ccbp.in/restaurants-list?offset=${offset}&limit=${LIMIT}`
+    const apiUrl = `https://apis.ccbp.in/restaurants-list?sort_by_rating=${activeOptionId}&offset=${offset}&limit=${LIMIT}`
     const options = {
       method: 'GET',
       headers: {
@@ -60,6 +65,7 @@ class Home extends Component {
         rating: eachRest.user_rating.rating,
         totalReviews: eachRest.user_rating.total_reviews,
       }))
+
       this.setState({
         restaurantsList: updatedData,
         isLoading: false,
@@ -98,12 +104,22 @@ class Home extends Component {
     }
   }
 
+  changeSortby = id => {
+    console.log(id)
+    this.setState({activeOptionId: id}, this.getRestaurants)
+  }
+
   renderRestaurantList = () => {
-    const {restaurantsList, activePage, totalPages} = this.state
+    const {restaurantsList, activePage, totalPages, activeOptionId} = this.state
+
     return (
-      <div className="restBg">
-        <RestaurantHeading />
-        <ul>
+      <div className="restBg p-2">
+        <RestaurantHeading
+          activeOptionId={activeOptionId}
+          sortByOptions={sortByOptions}
+          changeSortby={this.changeSortby}
+        />
+        <ul className="mt-4">
           {restaurantsList.map(eachItem => (
             <RestaurantItemDetails
               restaurantDetails={eachItem}
@@ -116,21 +132,22 @@ class Home extends Component {
             type="button"
             className="buttonStyle m-3"
             onClick={this.onDecrement}
+            testid="pagination-left-button"
           >
             <MdArrowBackIosNew />
           </button>
-          <p className="paginationText mt-3">
+          <p className="paginationText mt-3" testid="active-page-number">
             {activePage} of {totalPages}
           </p>
           <button
             type="button"
             className="buttonStyle m-3"
             onClick={this.onIncrement}
+            testid="pagination-right-button"
           >
             <MdArrowForwardIos />
           </button>
         </div>
-
         <Footer />
       </div>
     )

@@ -2,7 +2,7 @@ import {HiViewList} from 'react-icons/hi'
 import './index.css'
 
 const Header = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg navbar-light navbarBg">
     <div className="d-flex flex-row align-items-center p-1">
       <img
         src="https://res.cloudinary.com/dlhxfaljh/image/upload/v1642240090/testyKitchen/Group_7420_2_x9ybhz.png"
