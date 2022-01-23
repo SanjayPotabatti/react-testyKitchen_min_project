@@ -1,28 +1,28 @@
 import {Link} from 'react-router-dom'
-import {ImStarFull} from 'react-icons/im'
-
+import {AiFillStar} from 'react-icons/ai'
 import './index.css'
 
 const RestaurantItemDetails = props => {
-  const {restaurant} = props
-  const {id, cuisine, imageUrl, name, rating, totalReviews} = restaurant
-
+  const {restaurantDetails} = props
+  const {id, cuisine, imageUrl, name, rating, totalReviews} = restaurantDetails
   return (
-    <Link to={`/restaurant/${id}`} className="restaurant-link">
-      <li testid="restaurant-item" className="restaurant-card">
-        <img src={imageUrl} alt="restaurant" className="restaurant-img" />
-        <div className="restaurant-information">
-          <h1 className="restaurant-name">{name}</h1>
-          <p className="restaurant-cuisine">{cuisine}</p>
-          <div className="star-rating">
-            <ImStarFull className="star" />
-            <p className="total-rating">{rating}</p>
-            <p className="user-total-reviews">({totalReviews} rating)</p>
+    <Link to={`/restaurant/${id}`}>
+      <div className="d-flex flex-row mb-2 mr-1">
+        <div>
+          <img src={imageUrl} className="cardImg" alt="restaurant" />
+        </div>
+
+        <div className="d-flex flex-column p-2">
+          <p className="restName m-0 ml-1">{name}</p>
+          <p className="restCusine m-0 ml-1">{cuisine}</p>
+          <div className="d-flex flex-row ml-1">
+            <AiFillStar color="#FFCC00" />
+            <p className="restName pr-1">{rating}</p>
+            <p className="restCusine1 m-0">({totalReviews} ratings)</p>
           </div>
         </div>
-      </li>
+      </div>
     </Link>
   )
 }
-
 export default RestaurantItemDetails

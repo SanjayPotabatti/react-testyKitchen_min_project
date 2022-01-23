@@ -1,27 +1,19 @@
-import {Route, Switch} from 'react-router-dom'
+import {Redirect, Route, Switch} from 'react-router-dom'
 import Login from './components/Login'
 import Home from './components/Home'
 import NotFound from './components/NotFound'
+import ProtectedRoute from './components/ProtectedRoute'
+import RestaurantPage from './components/RestaurantPage'
 
 import './App.css'
-
-const sortByOptions = [
-  {
-    id: 0,
-    displayText: 'Highest',
-    value: 'Highest',
-  },
-  {
-    id: 2,
-    displayText: 'Lowest',
-    value: 'Lowest',
-  },
-]
 
 const App = () => (
   <Switch>
     <Route path="/login" component={Login} />
-    <Route path="/" component={Home} />
+    <ProtectedRoute exact path="/" component={Home} />
+    <ProtectedRoute exact path="/restaurant/:id" component={RestaurantPage} />
+    <Route path="/not-found" component={NotFound} />
+    <Redirect to="/not-found" />
   </Switch>
 )
 

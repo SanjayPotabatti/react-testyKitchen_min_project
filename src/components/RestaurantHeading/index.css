@@ -1,0 +1,29 @@
+.sortByOptions {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-family: 'DM Sans';
+  color: #475569;
+  font-weight: 500;
+}
+.sortIcon {
+  height: 24px;
+  width: 24px;
+  color: #475569;
+}
+.restHeading {
+  color: #183b56;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'DM Sans';
+}
+.restPara {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'DM Sans';
+}

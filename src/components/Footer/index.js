@@ -8,7 +8,7 @@ import './index.css'
 
 export default function Footer() {
   return (
-    <div className="footer-bg-container fixed-bottom">
+    <div className="footer-bg-container">
       <div className="d-flex flex-row justify-content-center pt-4">
         <img
           src="https://res.cloudinary.com/dlhxfaljh/image/upload/v1642240095/testyKitchen/Group_7420_1_usf85n.png"
