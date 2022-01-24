@@ -1,4 +1,4 @@
-.cart-container {
+.cartContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .cart-container {
+  .cartContainer {
     margin-top: 30px;
   }
 }

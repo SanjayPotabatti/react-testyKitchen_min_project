@@ -1,21 +1,21 @@
-.empty-cart-container {
+.emptyCartContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.empty-cart-image {
+.emptyCartImage {
   width: 200px;
 }
 
 @media screen and (min-width: 786px) {
-  .empty-cart-image {
+  .emptyCartImage {
     width: 400px;
   }
 }
 
-.no-order-heading {
+.noOrderHeading {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -25,7 +25,7 @@
   color: #1e293b;
 }
 
-.no-order-text {
+.noOrderText {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
@@ -34,7 +34,7 @@
   color: #64748b;
 }
 
-.order-btn {
+.orderBtn {
   background: #f7931e;
   border-radius: 8px;
   padding: 8px 16px;

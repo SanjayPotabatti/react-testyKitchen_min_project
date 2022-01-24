@@ -1,4 +1,4 @@
-.not-found-container {
+.notFoundContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,17 +6,17 @@
   min-height: 90vh;
 }
 
-.not-found-image {
+.notFoundImage {
   width: 150px;
 }
 
 @media screen and (min-width: 768px) {
-  .not-found-image {
+  .notFoundImage {
     width: 250px;
   }
 }
 
-.not-found-heading {
+.notFoundHeading {
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -26,7 +26,7 @@
   color: #1e293b;
 }
 
-.not-found-text {
+.notFoundText {
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -36,12 +36,12 @@
   color: #475569;
 }
 @media screen and (min-width: 768px) {
-  .not-found-text {
+  .notFoundText {
     font-size: 20px;
   }
 }
 
-.home-btn {
+.homeBtn {
   background: #f7931e;
   border-radius: 8px;
   padding: 8px 16px;

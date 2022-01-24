@@ -22,16 +22,16 @@ const CartTotal = props => {
 
         return (
           <>
-            <hr className="cart-hr-line" />
-            <div className="cart-total-container">
-              <h1 className="total-text">Order Total:</h1>
-              <div className="total-container">
-                <p testid="total-price" className="total-price">
+            <hr className="cartHrLine" />
+            <div className="cartTotalContainer">
+              <h1 className="totalText">Order Total:</h1>
+              <div className="totalContainer">
+                <p testid="total-price" className="totalPrice">
                   <FaRupeeSign size={18} /> {totalOrderCost}
                 </p>
                 <button
                   type="button"
-                  className="order-button"
+                  className="orderButton"
                   onClick={onClickPlaceOrder}
                 >
                   Place Order

@@ -1,0 +1,21 @@
+.carouselContainer {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+.carousal {
+  width: 100%;
+}
+
+.carousalItemImage {
+  width: 100%;
+  height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousalItemImage {
+    height: 300px;
+  }
+}

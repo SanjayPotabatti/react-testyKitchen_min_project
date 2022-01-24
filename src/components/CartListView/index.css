@@ -1,20 +1,20 @@
-.cart-list-container {
+.cartListContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.cart-headers-cont {
+.cartHeadersCont {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .cart-headers-cont {
+  .cartHeadersCont {
     display: flex;
   }
 }
 
-.cart-title-item {
+.cartTitleItem {
   padding-left: 80px;
   width: 50%;
   font-family: DM Sans;
@@ -26,20 +26,20 @@
   color: #475569;
 }
 
-.qunatity-and-price {
+.qunatityAndPrice {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
 @media screen and (min-width: 786px) {
-  .qunatity-and-price {
+  .qunatityAndPrice {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-.cart-header-qunatity {
+.cartHeaderQunatity {
   text-align: center;
   width: 50%;
   font-family: DM Sans;
@@ -51,7 +51,7 @@
   color: #475569;
 }
 
-.cart-price {
+.cartPrice {
   text-align: center;
   width: 50%;
   font-family: DM Sans;
@@ -63,7 +63,7 @@
   color: #475569;
 }
 
-.cart-list {
+.cartList {
   list-style-type: none;
   padding-left: 0px;
 }

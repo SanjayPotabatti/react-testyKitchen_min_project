@@ -1,104 +1,95 @@
-.banner-bg {
+.bannerBg {
   width: 360px;
   height: 188px;
   background: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.banner-container {
+.bannerContainer {
   width: 90%;
-  max-width: 1200px;
-  display: flex;
-  align-items: center;
 }
 
-.res-image {
+.resImage {
   width: 221px;
   height: 221px;
-  margin-left: -80px;
+  margin-left: -90px;
   margin-top: -60px;
   border-radius: 133.98px;
   margin-right: 5px;
 }
 
 @media screen and (min-width: 768px) {
-  .res-image {
+  .resImage {
     width: 445px;
     height: 280px;
     border-radius: 8px;
+    margin: 20px;
+  }
+  .bannerBg {
+    width: 100%;
+    height: 344px;
   }
 }
-
-.res-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.res-name {
-  font-family: Roboto;
+.resName {
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.2px;
   color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
-  .res-name {
+  .resName {
     font-size: 30px;
   }
 }
 
-.res-cuisine {
-  font-family: Roboto;
+.resCuisine {
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 16px;
   color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
-  .res-cuisine {
+  .resCuisine {
+    font-size: 16px;
+  }
+  .resLocation {
     font-size: 16px;
   }
 }
 
-.res-location {
-  font-family: Roboto;
+.resLocation {
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 16px;
+  font-weight: 400;
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .res-location {
-    font-size: 16px;
-  }
-}
-
-.rating-rate-container {
+.ratingRateContainer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.rating-container {
+.ratingContainer {
   display: flex;
   flex-direction: column;
 }
 
 .rating {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   display: flex;
   align-items: center;
@@ -106,7 +97,7 @@
   margin-bottom: 0px;
 }
 
-.sub-text {
+.subText {
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -117,7 +108,7 @@
   color: #e2e8f0;
 }
 
-.separation-line {
+.separationLine {
   width: 40px;
   height: 0px;
   border: 1px solid #e2e8f0;

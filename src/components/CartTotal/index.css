@@ -1,14 +1,14 @@
-.cart-hr-line {
+.cartHrLine {
   border: 1px dashed #cbd2d9;
   width: 100%;
 }
 
-.cart-total-container {
+.cartTotalContainer {
   display: flex;
   justify-content: space-between;
 }
 
-.total-text {
+.totalText {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -17,7 +17,7 @@
   color: #3e4c59;
 }
 
-.total-price {
+.totalPrice {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -27,7 +27,7 @@
   color: #3e4c59;
 }
 
-.order-button {
+.orderButton {
   background: #f7931e;
   border-radius: 8px;
   color: #ffffff;

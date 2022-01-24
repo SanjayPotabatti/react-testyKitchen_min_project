@@ -20,7 +20,7 @@ class Cart extends Component {
           return (
             <>
               <Header />
-              <div className="cart-container">
+              <div className="cartContainer">
                 {isCartEmpty ? <EmptyCart /> : <CartListView />}
               </div>
               <Footer />

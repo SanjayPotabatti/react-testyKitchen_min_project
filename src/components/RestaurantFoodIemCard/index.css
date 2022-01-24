@@ -6,132 +6,123 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 786px) {
-  .foodItem {
-    width: 45%;
-    margin-right: 20px;
-  }
-}
-
-.food-item-image {
-  width: 180px;
-  height: 150px;
+.foodItemImage {
+  width: 160px;
+  height: 120px;
   border-radius: 8px;
   margin-right: 10px;
 }
 
 @media screen and (min-width: 786px) {
-  .food-item-image {
-    width: 250px;
+  .foodItemImage {
+    width: 255px;
     height: 150px;
   }
 }
 
-.food-item-info {
+.foodItemInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.food-item-name {
-  font-family: DM Sans;
+.foodItemName {
+  font-family: 'DM Sans';
   font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 0.2px;
-  color: #334155;
-  margin: 0px;
-}
-
-@media screen and (min-width: 786px) {
-  .food-item-name {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
-.cost-cont {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.food-item-cost {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 700;
   line-height: 24px;
-  color: #334155;
-  margin: 0px;
-}
-
-@media screen and (min-width: 786px) {
-  .food-item-cost {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-.rating-cont {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.food-item-rating {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  color: #334155;
+  letter-spacing: 0.2px;
+}
+
+.ratingCont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.foodItemRating {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.23px;
   color: #334155;
   margin: 0px;
 }
 
-.add-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8px 16px;
+.addBtn {
   border: 2px solid #ffa412;
   box-sizing: border-box;
   border-radius: 8px;
-  width: 52px;
-  height: 32px;
+  color: #ffa412;
+  width: 44px;
+  height: 24px;
+  font-size: 12px;
   background: none;
 }
 
-.cart-btn-qty-cont {
+.cartBtnQtyCont {
   display: flex;
   align-items: center;
 }
 
-.decrement-count {
+.decrementCount {
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-.increment-count {
+.incrementCount {
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-.icon-btn {
+.iconBtn {
   color: #475569;
   width: 16px;
   height: 16px;
 }
 
-.active-count {
+.activeCount {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #475569;
+}
+
+.costCont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.foodItemCost {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #334155;
+}
+@media screen and (min-width: 786px) {
+  .foodItemName {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+  .foodItemCost {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .foodItem {
+    width: 45%;
+    margin-right: 20px;
+  }
 }

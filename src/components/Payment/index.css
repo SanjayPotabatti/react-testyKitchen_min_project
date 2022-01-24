@@ -1,11 +1,12 @@
-.payment-container {
-  min-height: 90vh;
+.paymentContainer {
+  width: 312px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.payment-card {
+.paymentCard {
   background: #ffffff;
   box-shadow: 0px 4.00734px 40.0734px rgba(23, 31, 70, 0.16);
   border-radius: 12px;
@@ -16,36 +17,43 @@
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;
+  width: 312px;
+  height: 320px;
 }
 
-.payment-image {
-  width: 64px;
-  height: 64px;
+.paymentImage {
+  width: 38.4px;
+  height: 38.4px;
+  margin-bottom: 30px;
 }
 
-.payment-heading {
-  font-family: DM Sans;
+.paymentHeading {
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 24px;
   text-align: center;
   color: #1e293b;
 }
-.payment-text {
-  font-family: DM Sans;
+.paymentText {
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #64748b;
 }
 
-.home-btn {
+.homeBtn {
   background: #f7931e;
   border-radius: 8px;
   padding: 8px 16px;
   color: #ffffff;
   border: none;
+  width: 131px;
+  height: 32px;
+  font-size: 12px;
+  line-height: 16px;
 }

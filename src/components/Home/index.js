@@ -7,6 +7,7 @@ import {MdArrowForwardIos, MdArrowBackIosNew} from 'react-icons/md'
 import Header from '../Header'
 import RestaurantHeading from '../RestaurantHeading'
 import RestauranCard from '../RestauranCard'
+import Carousel from '../Carousel'
 
 import Footer from '../Footer'
 import './index.css'
@@ -114,12 +115,14 @@ class Home extends Component {
 
     return (
       <div className="restBg p-2">
+        <Carousel />
         <RestaurantHeading
           activeOptionId={activeOptionId}
           sortByOptions={sortByOptions}
           changeSortby={this.changeSortby}
         />
-        <ul className="mt-4">
+
+        <ul className="d-flex flex-wrap mt-4">
           {restaurantsList.map(eachItem => (
             <RestauranCard restaurantDetails={eachItem} key={eachItem.id} />
           ))}

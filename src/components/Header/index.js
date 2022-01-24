@@ -31,16 +31,17 @@ const Header = props => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light navbarBg">
-      <div className="d-flex flex-row align-items-center p-1">
-        <Link to="/" className="nav-link">
+      <Link to="/" className="nav-link">
+        <div className="d-flex flex-row align-items-center p-1">
           <img
             src="https://res.cloudinary.com/dlhxfaljh/image/upload/v1642240090/testyKitchen/Group_7420_2_x9ybhz.png"
             className="logo-image-header"
             alt="website logo"
           />
           <h1 className="header-heading ml-2">Tasty Kitchen</h1>
-        </Link>
-      </div>
+        </div>
+      </Link>
+
       <button
         className="navbar-toggler"
         type="button"
@@ -53,7 +54,7 @@ const Header = props => {
         <HiViewList />
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul className="navbar-nav pr-5">
+        <ul className="navbar-nav d-flex flex-row align-items-center pr-5">
           <Link to="/" className="nav-link">
             <li className="nav-item active navItemsHeading p-2">Home</li>
           </Link>

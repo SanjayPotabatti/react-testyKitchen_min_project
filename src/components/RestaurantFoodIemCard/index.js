@@ -48,45 +48,41 @@ class RestaurantFoodIemCard extends Component {
 
           return (
             <li testid="foodItem" className="foodItem">
-              <img src={imageUrl} alt="food item" className="food-item-image" />
-              <div className="food-item-info">
-                <h1 className="food-item-name">{name}</h1>
-                <div className="cost-cont">
-                  <FaRupeeSign size={16} color="#334155" />
-                  <p className="food-item-cost">{cost}</p>
+              <img src={imageUrl} alt="food item" className="foodItemImage" />
+              <div className="foodItemInfo">
+                <h1 className="foodItemName m-0">{name}</h1>
+                <div className="costCont">
+                  <FaRupeeSign size={14} color="#334155" />
+                  <p className="foodItemCost m-0">{cost}</p>
                 </div>
-                <div className="rating-cont">
-                  <ImStarFull size={16} color="#FFCC00" />
-                  <p className="food-item-rating">{rating}</p>
+                <div className="ratingCont">
+                  <ImStarFull size={14} color="#FFCC00" />
+                  <p className="foodItemRating">{rating}</p>
                 </div>
                 {quantity === 0 ? (
-                  <button
-                    type="button"
-                    className="add-btn"
-                    onClick={onClickAdd}
-                  >
+                  <button type="button" className="addBtn" onClick={onClickAdd}>
                     Add
                   </button>
                 ) : (
-                  <div className="cart-btn-qty-cont">
+                  <div className="cartBtnQtyCont">
                     <button
                       testid="decrement-count"
                       type="button"
-                      className="decrement-count"
+                      className="decrementCount"
                       onClick={onDecreaseQuantity}
                     >
-                      <BsDashSquare className="icon-btn" />
+                      <BsDashSquare className="iconBtn" />
                     </button>
-                    <p testid="active-count" className="active-count">
+                    <p testid="active-count" className="activeCount">
                       {quantity}
                     </p>
                     <button
                       testid="increment-count"
                       type="button"
-                      className="increment-count"
+                      className="incrementCount"
                       onClick={onIncreaseQuantity}
                     >
-                      <BsPlusSquare className="icon-btn" />
+                      <BsPlusSquare className="iconBtn" />
                     </button>
                   </div>
                 )}

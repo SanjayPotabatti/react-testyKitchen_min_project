@@ -7,7 +7,7 @@ const RestauranCard = props => {
   const {id, cuisine, imageUrl, name, rating, totalReviews} = restaurantDetails
   return (
     <Link to={`/restaurant/${id}`}>
-      <div className="d-flex flex-row mb-2">
+      <div className="d-flex flex-row restCard mb-2">
         <div>
           <img src={imageUrl} className="cardImg" alt="restaurant" />
         </div>

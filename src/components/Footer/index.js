@@ -8,20 +8,18 @@ import './index.css'
 
 export default function Footer() {
   return (
-    <div className="footer-bg-container">
+    <div className="footerBgContainer">
       <div className="d-flex flex-row justify-content-center pt-4">
         <img
           src="https://res.cloudinary.com/dlhxfaljh/image/upload/v1642240095/testyKitchen/Group_7420_1_usf85n.png"
           alt="website-footer-logo"
-          className="footer-image"
+          className="footerImage"
         />
-        <p className="footer-heading">Tasty Kitchens</p>
+        <p className="footerHeading">Tasty Kitchens</p>
       </div>
-      <p className="footer-para">
-        The only thing we are serious about is food.
-      </p>
+      <p className="footerPara">The only thing we are serious about is food.</p>
       <div>
-        <p className="footer-para">Contact us on</p>
+        <p className="footerPara">Contact us on</p>
         <div className="d-flex flex-row justify-content-center pt-4 pb-3">
           <FaInstagram
             color="#ffffff"

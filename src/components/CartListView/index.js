@@ -27,15 +27,15 @@ class CartListView extends Component {
           return isOrderPlaced ? (
             <Payment />
           ) : (
-            <div className="cart-list-container">
-              <div className="cart-headers-cont">
-                <p className="cart-title-item">Item</p>
-                <div className="qunatity-and-price">
-                  <p className="cart-header-qunatity">Quantity</p>
-                  <p className="cart-price">Price</p>
+            <div className="cartListContainer">
+              <div className="cartHeadersCont">
+                <p className="cartTitleItem">Item</p>
+                <div className="qunatityAndPrice">
+                  <p className="cartHeaderQunatity">Quantity</p>
+                  <p className="cartPrice">Price</p>
                 </div>
               </div>
-              <ul className="cart-list">
+              <ul className="cartList">
                 {parsedCartList.map(eachItem => (
                   <CartItem
                     key={eachItem.id}

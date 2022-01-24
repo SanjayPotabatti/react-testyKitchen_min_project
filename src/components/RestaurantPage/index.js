@@ -9,7 +9,7 @@ import RestaurantFoodIemCard from '../RestaurantFoodIemCard'
 
 import './index.css'
 
-class RestaurantDetails extends Component {
+class RestaurantPage extends Component {
   state = {
     restaurantData: {},
     foodItemsList: [],
@@ -69,7 +69,7 @@ class RestaurantDetails extends Component {
     return (
       <>
         <RestaurantBanner restaurantData={restaurantData} />
-        <ul className="food-items-list">
+        <ul className="foodItemsList">
           {foodItemsList.map(eachItem => (
             <RestaurantFoodIemCard foodItem={eachItem} key={eachItem.id} />
           ))}
@@ -79,7 +79,7 @@ class RestaurantDetails extends Component {
   }
 
   renderLoader = () => (
-    <div testid="restaurant-details-loader" className="restaurant-loader">
+    <div testid="restaurant-details-loader" className="restaurantLoader">
       <Loader type="Oval" color="#F7931E" height={50} width={50} />
     </div>
   )
@@ -96,4 +96,4 @@ class RestaurantDetails extends Component {
   }
 }
 
-export default RestaurantDetails
+export default RestaurantPage
