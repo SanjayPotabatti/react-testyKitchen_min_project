@@ -6,7 +6,7 @@ import {MdArrowForwardIos, MdArrowBackIosNew} from 'react-icons/md'
 
 import Header from '../Header'
 import RestaurantHeading from '../RestaurantHeading'
-import RestaurantItemDetails from '../RestaurantItemDetails'
+import RestauranCard from '../RestauranCard'
 
 import Footer from '../Footer'
 import './index.css'
@@ -121,10 +121,7 @@ class Home extends Component {
         />
         <ul className="mt-4">
           {restaurantsList.map(eachItem => (
-            <RestaurantItemDetails
-              restaurantDetails={eachItem}
-              key={eachItem.id}
-            />
+            <RestauranCard restaurantDetails={eachItem} key={eachItem.id} />
           ))}
         </ul>
         <div className="d-flex flex-row justify-content-center align-items-center">

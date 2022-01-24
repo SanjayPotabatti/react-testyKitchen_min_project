@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import {AiFillStar} from 'react-icons/ai'
 import './index.css'
 
-const RestaurantItemDetails = props => {
+const RestauranCard = props => {
   const {restaurantDetails} = props
   const {id, cuisine, imageUrl, name, rating, totalReviews} = restaurantDetails
   return (
@@ -25,4 +25,4 @@ const RestaurantItemDetails = props => {
     </Link>
   )
 }
-export default RestaurantItemDetails
+export default RestauranCard
